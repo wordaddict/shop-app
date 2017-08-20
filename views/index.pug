@@ -40,8 +40,8 @@ html(lang='en')
               h2(style='font-size: 50px') Search Now
               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               form(action='/search', method='post')
-                input(type='text', name='search', required='', placeholder='Name of the item', style='height: 30px;')
-                input(type='text', name='search', required='', placeholder='Your Location or latitude & longitude', style='height: 30px;')
+                input(type='text', name='term', required='', placeholder='Name of the item', style='height: 30px;')
+                input(type='text', name='location', required='', placeholder='Your Location or latitude & longitude', style='height: 30px;')
                 | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                 input(type='submit', value='Search')
             // //newsletter

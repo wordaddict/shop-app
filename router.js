@@ -104,8 +104,8 @@ router.post('/search', (req, res) => {
       res.send('index', locals)
     }
     const searchRequest = {
-      term:'sneakers',
-      location:'maryland'
+      term: req.body.term,
+      location:req.body.location
     };
 
     yelp.accessToken(clientId, clientSecret).then(response => {
