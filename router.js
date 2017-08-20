@@ -114,7 +114,7 @@ router.post('/search', (req, res) => {
       client.search(searchRequest).then(response => {
         const firstResult = response.jsonBody.businesses[0, 1, 2, 3];
         const prettyJson = JSON.stringify(firstResult, null, 4);
-        console.log(prettyJson);
+        res.send(prettyJson);
       });
     }).catch(e => {
       console.log(e);
